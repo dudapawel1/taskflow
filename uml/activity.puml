@@ -1,0 +1,8 @@
+
+@startuml
+start
+:Enter Task Details;
+:Validate Inputs;
+:Save to Memory;
+stop
+@enduml

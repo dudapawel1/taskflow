@@ -1,0 +1,11 @@
+
+@startuml
+actor User
+rectangle "TaskFlow App" {
+  User --> (Add Task)
+  User --> (Remove Task)
+  User --> (Mark as Done)
+  User --> (Filter Tasks)
+  User --> (Assign to Project)
+}
+@enduml

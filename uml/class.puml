@@ -1,0 +1,19 @@
+
+@startuml
+class Task {
+  - title
+  - description
+  - deadline
+  - completed
+  + mark_done()
+  + is_overdue()
+}
+class Project {
+  - name
+  - tasks
+  + add_task()
+  + remove_task()
+  + get_tasks_by_status()
+}
+Project --> Task : contains >
+@enduml

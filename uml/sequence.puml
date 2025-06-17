@@ -1,0 +1,11 @@
+
+@startuml
+actor User
+participant "App UI" as UI
+participant "Project class" as Project
+participant "Task class" as Task
+
+User -> UI : Click 'Add Task'
+UI -> Project : add_task(task)
+Project -> Task : new Task()
+@enduml
